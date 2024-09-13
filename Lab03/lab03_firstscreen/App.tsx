@@ -3,10 +3,9 @@ import {
   Text,
   View,
   StyleSheet,
-  SafeAreaView,
   TouchableOpacity,
 } from 'react-native';
-const YourApp = () => {
+const lab03_FirstScreen = () => {
   return (
     <View
       style={{
@@ -33,7 +32,7 @@ const YourApp = () => {
           height: 58,
         }}>
         <Text style={style.paragraph}>
-          GROW {"\n"} YOUR BUSINESS
+          Grow {"\n"} Your Business
         </Text>
       </View>
       <View
@@ -57,10 +56,10 @@ const YourApp = () => {
           width:'100%',
         }}>
         <TouchableOpacity style={style.buttonStyle}>
-          <Text style={style.buttonText}>LOGIN</Text>
+          <Text style={style.buttonText}>Login</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style.buttonStyle}>
-          <Text style={style.buttonText}>SIGN UP</Text>
+          <Text style={style.buttonText}>Sign up</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -81,6 +80,7 @@ const style = StyleSheet.create({
     fontWeight: 700,
     fontSize: 22,
     lineHeight: 29.3,
+    textTransform:'uppercase'
   },
   paragraphUnder: {
     textAlign: 'center',
@@ -99,7 +99,8 @@ const style = StyleSheet.create({
   buttonText: {
     fontSize: 20,
     fontWeight: 700,
+    textTransform:'uppercase'
   },
 });
 
-export default YourApp;
+export default lab03_FirstScreen;
